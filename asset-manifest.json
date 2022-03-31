@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.f46a6415.css",
+    "main.js": "/react-gh-pages/static/js/main.e55094be.js",
+    "static/js/787.d9a20797.chunk.js": "/react-gh-pages/static/js/787.d9a20797.chunk.js",
+    "static/media/layered-waves-haikei.svg": "/react-gh-pages/static/media/layered-waves-haikei.00d87f9524af3e0a7b2efa3a5642277c.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.f46a6415.css.map": "/react-gh-pages/static/css/main.f46a6415.css.map",
+    "main.e55094be.js.map": "/react-gh-pages/static/js/main.e55094be.js.map",
+    "787.d9a20797.chunk.js.map": "/react-gh-pages/static/js/787.d9a20797.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f46a6415.css",
+    "static/js/main.e55094be.js"
+  ]
+}
