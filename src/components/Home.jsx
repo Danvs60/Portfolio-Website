@@ -13,9 +13,9 @@ const code3 = '}'
 
 export default function Home({ scrollToProjects, scrollToAbout }) {
   return (
-    <div className='bg-mistyRose-500 text-gray-900 h-full px-40 py-16'>
+    <div className='bg-mistyRose-500 text-gray-800 h-full px-24 2xl:px-40 py-16'>
       <nav className="flex justify-between w-full">
-        <a className='flex items-center gap-x-2 text-2xl' href="https://github.com/Danvs60"><FaGithub className='text-gray-900' /> Danvs60</a>
+        <a className='flex items-center gap-x-2 text-2xl' href="https://github.com/Danvs60"><FaGithub className='text-gray-800' /> Danvs60</a>
         <section className='flex gap-x-10 items-center text-2xl'>
           <button className='font-semibold' onClick={() => scrollToProjects()}>Projects</button>
           <button className='font-semibold' onClick={() => scrollToAbout()}>About</button>
@@ -27,8 +27,8 @@ export default function Home({ scrollToProjects, scrollToAbout }) {
       </nav>
       <main className='py-12 flex flex-col gap-y-6'>
         <div className='flex flex-col gap-y-6 font-extrabold text-xl 2xl:text-6xl'>
-          <h1 className=''>Hello! I am </h1>
-          <h1 className=' text-bluePigment-500 text-7xl'>Daniel Bartolini</h1>
+          <h1 className='text-4xl'>Hello! I am </h1>
+          <h1 className='text-bluePigment-500 text-7xl'>Daniel Bartolini</h1>
         </div>
         <section className='flex items-center justify-between imageEntrance'>
           <Dot />

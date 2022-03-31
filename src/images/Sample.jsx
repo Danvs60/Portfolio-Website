@@ -5,7 +5,7 @@ function Icon() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="70%"
-      height="auto"
+      height="100%"
       data-name="Layer 1"
       viewBox="0 0 578 578"
       style={{display: "block", margin: "auto"}} // to center svg within parent element

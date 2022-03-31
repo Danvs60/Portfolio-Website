@@ -1,5 +1,6 @@
 import Home from './components/Home'
 import Projects from './components/Projects';
+import About from './components/About'
 import { useRef } from 'react'
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
 
   return (
     <div className="h-screen">
-      <Home scrollToProjects={scrollToProjects} reference={homeRef}/>
-      <Projects reference={projectRef} />
+      <Home scrollToProjects={scrollToProjects} scrollToAbout={scrollToAbout} reference={homeRef}/>
+      <Projects scrollToAbout={scrollToAbout} scrollToHome={scrollToHome} reference={projectRef} />
+      <About scrollToProjects={scrollToProjects} scrollToHome={scrollToHome} reference={aboutRef} />
     </div>
   );
 }

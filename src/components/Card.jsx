@@ -4,19 +4,25 @@ import { FaJsSquare, FaPython } from 'react-icons/fa'
 
 export default function Card({size}) {
   return (
-    <div className={`flex flex-col justify-between gap-y-2 px-10 py-6 rounded-xl shadow text-gray-800 bg-mistyRose-500 ${size === "sm" ? "h-2/3 w-1/4 self-end" : "h-5/6 w-1/3"}`}>
-      <section> 
+    <div className={`overflow-hidden flex lg:flex-col justify-between 
+    gap-y-8 gap-x-12
+    px-10 py-6 rounded-xl shadow-xl text-gray-800 bg-mistyRose-500 
+    ${size === "sm" ? "lg:h-3/5 lg:w-2/4" : "lg:h-5/6 lg:w-2/3"}`}>
+      <section className='w-1/3 lg:w-full lg:h-1/4'> 
         <Sample/> 
       </section>
-      <section>
-        <h2 className='text-2xl font-bold'>Project Title</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Tenetur nulla soluta repellat beatae magni, quod veniam harum omnis, <br />
-        tempore deleniti blanditiis, nostrum nobis repudiandaeautem officiis. Exercitationem aut esse inventore.
+      <section className='h-full'>
+        <h2 className='text-2xl 2xl:text-4xl font-bold text-bluePigment-500'>Project Title</h2>
+        <p className='serifText text-base 2xl:text-2xl mt-4'>
+          In this project I built an app that does clever stuff.
         </p>
       </section>
-      <section >
-        <h3>Languages used:</h3> 
-        <div className='flex gap-x-2'><FaJsSquare/> <FaPython/></div>
+      <section className='text-bluePigment-500 flex flex-col gap-y-4 justify-between'>
+        <div>
+          <h3>Languages used:</h3> 
+          <div className='flex gap-x-2'><FaJsSquare/> <FaPython/></div>
+        </div>
+        <button className='w-full px-2 py-2 lg:px-6 lg:py-3 text-sm lg:text-xl font-semibold rounded-2xl shadow-2xl bg-bluePigment-500 text-gray-100'>See more</button>
       </section>
     </div>
   )
