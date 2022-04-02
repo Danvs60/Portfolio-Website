@@ -4,6 +4,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        fadeIn: "fadeIn 0.4s ease-in forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 , transform: "scale(0.8)" },
+          "100%": { opacity: 100, transform: "scale(1)" },
+        },
+      },
       colors: {
         bluePigment: {
           100: "#d5d8e9",
@@ -40,6 +49,9 @@ module.exports = {
         },
       }
     },
+  },
+  variants: {
+    animation: ["motion-safe"]
   },
   plugins: [],
 }

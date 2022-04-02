@@ -27,20 +27,6 @@ body {
   background-size: cover;
 }
 
-.imageEntrace > svg {
-  display: block;
-  animation: slide 5s;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX("-10em")
-  }
-  to {
-    transform: translateX(0em)
-  }
-}
-
 .glass {
   background: linear-gradient(133.21deg, rgba(243, 243, 243, 0.6) 1.14%, rgba(243, 243, 243, 0.380135) 62.58%, rgba(243, 243, 243, 0.284482) 90.84%, rgba(243, 243, 243, 0.05) 100%);
   backdrop-filter: blur(50px); /* Note: backdrop-filter has minimal browser support */

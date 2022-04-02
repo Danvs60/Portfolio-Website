@@ -34,7 +34,7 @@ export default function CardSlider() {
                 setRepos(arr.unshift(arr.pop()))
                 setRepos(arr)
             }}
-                className='absolute -left-24 text-gray-100 text-opacity-90 hover:scale-125 duration-100'>
+                className='absolute -left-24 text-gray-100 text-opacity-30 hover:scale-125 hover:text-opacity-70 duration-100'>
                 <IoIosArrowDropleftCircle size={70} />
             </button>
             <button onClick={() => {
@@ -42,12 +42,12 @@ export default function CardSlider() {
                 setRepos(arr.push(arr.shift()))
                 setRepos(arr)
             }}
-                className='absolute -right-24 text-gray-100 text-opacity-90 hover:scale-125 duration-100'>
+                className='absolute -right-24 text-gray-100 text-opacity-30 hover:scale-125 hover:text-opacity-70 duration-100'>
                 <IoIosArrowDroprightCircle size={70} />
             </button>
             {repos.slice(0, 3).map((proj, i) => (
                 // console.log(proj.name, proj.description , i)
-                <Card key={i} sm={i % 2 === 0} title={proj.name} desc={proj.description} />
+                <Card key={i + new Date().getTime()} sm={i % 2 === 0} title={proj.name} desc={proj.description} />
             ))}
         </>
     )
