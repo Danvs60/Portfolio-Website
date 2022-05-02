@@ -20,8 +20,8 @@ function App() {
   }
 
   return (
-    <div className="h-screen">
-      <Home scrollToProjects={scrollToProjects} scrollToAbout={scrollToAbout} reference={homeRef}/>
+    <div>
+      <Home scrollToProjects={scrollToProjects} scrollToAbout={scrollToAbout} reference={homeRef} />
       <Projects scrollToAbout={scrollToAbout} scrollToHome={scrollToHome} reference={projectRef} />
       <About scrollToProjects={scrollToProjects} scrollToHome={scrollToHome} reference={aboutRef} />
     </div>

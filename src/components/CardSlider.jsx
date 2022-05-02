@@ -10,18 +10,17 @@ export default function CardSlider() {
         { name: "Zaditen", description: "This is my third project" },
         { name: "Oftabak", description: "This is my fourth project" },
         { name: "GheeMummy", description: "This is my fifth project" },
-        { name: "Mine craft", description: "This is my sixth project" },
+        { name: "Minecraft cool world hehe", description: "This is my sixth project" },
         { name: "Antihistamine pills", description: "This is my seventh project" },
     ]
 
     const [repos, setRepos] = useState(test)
 
-    // const getRepos = () => {
-    //   fetch("https://api.github.com/users/Danvs60/repos")
-    //   .then(res => res.json())
-    //   .then(data => console.log(data))
-    //   console.info(repos)
-    // }
+    const getRepos = () => {
+      fetch("https://api.github.com/users/Danvs60/repos")
+      .then(res => res.json())
+      .then(data => setRepos(data))
+    }
 
     // useEffect(() => {
     //   getRepos()
@@ -46,8 +45,7 @@ export default function CardSlider() {
                 <IoIosArrowDroprightCircle size={70} />
             </button>
             {repos.slice(0, 3).map((proj, i) => (
-                // console.log(proj.name, proj.description , i)
-                <Card key={i + new Date().getTime()} sm={i % 2 === 0} title={proj.name} desc={proj.description} />
+                <Card key={i + new Date().getTime()} sm={i % 2 === 0} title={proj.name} desc={proj.description} url={proj.html_url} />
             ))}
         </>
     )

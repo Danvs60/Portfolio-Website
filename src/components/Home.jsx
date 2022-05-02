@@ -13,7 +13,7 @@ const code3 = '}'
 
 export default function Home({ scrollToProjects, scrollToAbout }) {
   return (
-    <div className='bg-mistyRose-500 text-gray-800 h-full px-24 2xl:px-40 py-16'>
+    <div className='bg-mistyRose-500 text-gray-800 h-screen px-24 2xl:px-40 py-16'>
       <nav className="flex justify-between w-full">
         <a className='flex items-center gap-x-2 text-2xl' href="https://github.com/Danvs60"><FaGithub className='text-gray-800' /> Danvs60</a>
         <section className='flex gap-x-10 items-center text-2xl'>

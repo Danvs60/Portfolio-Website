@@ -27,6 +27,15 @@ body {
   background-size: cover;
 }
 
+.spacerAbout {
+  aspect-ratio: 960/540;
+  width: 100%;
+  height: fit-content;
+  backgroun-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .glass {
   background: linear-gradient(133.21deg, rgba(243, 243, 243, 0.6) 1.14%, rgba(243, 243, 243, 0.380135) 62.58%, rgba(243, 243, 243, 0.284482) 90.84%, rgba(243, 243, 243, 0.05) 100%);
   backdrop-filter: blur(50px); /* Note: backdrop-filter has minimal browser support */
