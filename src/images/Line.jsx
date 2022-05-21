@@ -1,10 +1,10 @@
 import React from "react";
 
-function Icon({color = "#FE7E6D"}) {
+function Line({color = "#FE7E6D"}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="50"
+      width="30"
       height="5"
       fill="none"
       viewBox="0 0 50 5"
@@ -14,4 +14,4 @@ function Icon({color = "#FE7E6D"}) {
   );
 }
 
-export default Icon;
+export default Line;

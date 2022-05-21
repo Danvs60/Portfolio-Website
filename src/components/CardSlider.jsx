@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Card from './Card'
-import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons/io'
+import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle, IoIosArrowDropdownCircle, IoIosArrowDropupCircle } from 'react-icons/io'
 
 export default function CardSlider() {
 
@@ -17,14 +17,14 @@ export default function CardSlider() {
     const [repos, setRepos] = useState(test)
 
     const getRepos = () => {
-      fetch("https://api.github.com/users/Danvs60/repos")
-      .then(res => res.json())
-      .then(data => setRepos(data))
+        fetch("https://api.github.com/users/Danvs60/repos")
+            .then(res => res.json())
+            .then(data => setRepos(data))
     }
 
-    // useEffect(() => {
-    //   getRepos()
-    // }, [])
+    useEffect(() => {
+      getRepos()
+    }, [])
 
     return (
         <>
@@ -33,16 +33,16 @@ export default function CardSlider() {
                 setRepos(arr.unshift(arr.pop()))
                 setRepos(arr)
             }}
-                className='absolute -left-24 text-gray-100 text-opacity-30 hover:scale-125 hover:text-opacity-70 duration-100'>
-                <IoIosArrowDropleftCircle size={70} />
+                className='absolute top-0 lg:top-auto lg:-left-24 text-gray-100 text-opacity-30 hover:scale-125 hover:text-opacity-70 duration-100'>
+                {window.innerWidth >= 1280 ? <IoIosArrowDropleftCircle size={70} /> : <IoIosArrowDropupCircle size={70} />}
             </button>
             <button onClick={() => {
                 let arr = [...repos]
                 setRepos(arr.push(arr.shift()))
                 setRepos(arr)
             }}
-                className='absolute -right-24 text-gray-100 text-opacity-30 hover:scale-125 hover:text-opacity-70 duration-100'>
-                <IoIosArrowDroprightCircle size={70} />
+                className='absolute bottom-0 lg:bottom-auto lg:-right-24 text-gray-100 text-opacity-30 hover:scale-125 hover:text-opacity-70 duration-100'>
+                {window.innerWidth >= 1280 ? <IoIosArrowDroprightCircle size={70} /> : <IoIosArrowDropdownCircle size={70} />}
             </button>
             {repos.slice(0, 3).map((proj, i) => (
                 <Card key={i + new Date().getTime()} sm={i % 2 === 0} title={proj.name} desc={proj.description} url={proj.html_url} />

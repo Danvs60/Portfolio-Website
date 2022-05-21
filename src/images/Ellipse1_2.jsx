@@ -1,11 +1,11 @@
 import React from "react";
 
-function Icon() {
+function Ellipse1_2() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="90"
-      height="90"
+      width="70"
+      height="auto"
       fill="none"
       viewBox="0 0 90 90"
     >
@@ -17,4 +17,4 @@ function Icon() {
   );
 }
 
-export default Icon;
+export default Ellipse1_2;

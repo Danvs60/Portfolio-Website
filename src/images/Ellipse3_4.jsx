@@ -4,8 +4,8 @@ function Icon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="112"
-      height="131"
+      width="90"
+      height="auto"
       fill="none"
       viewBox="0 0 112 131"
     >

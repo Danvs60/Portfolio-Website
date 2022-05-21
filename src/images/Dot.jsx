@@ -1,11 +1,11 @@
 import React from "react";
 
-function Icon() {
+function Dot() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="15"
-      height="15"
+      width="10"
+      height="10"
       fill="none"
       viewBox="0 0 15 15"
     >
@@ -14,4 +14,4 @@ function Icon() {
   );
 }
 
-export default Icon;
+export default Dot;

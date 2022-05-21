@@ -35,7 +35,7 @@ export default function Steps() {
     )
     :
     (
-      <div className="grid grid-cols-4 gap-x-6 gap-y-4 w-96">
+      <div className="grid grid-cols-4 gap-x-6 gap-y-4 w-72 md:w-96">
         <div className="justify-self-center self-center col-span-1"><Circle size={42} /></div>
         <p className="text-xl font-normal self-center col-span-3">SLO High graduate, US</p>
         <div className="h-32 w-1.5 bg-bluePigment-500 rounded-md justify-self-center col-span-1"></div>

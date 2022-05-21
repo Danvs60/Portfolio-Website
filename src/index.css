@@ -20,15 +20,14 @@ body {
 }
 
 .spacer {
-  aspect-ratio: 960/540;
   width: 100%;
   background-repeat: no-repeat;
   backgroun-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .spacerAbout {
-  aspect-ratio: 960/540;
   width: 100%;
   height: fit-content;
   backgroun-position: center;
