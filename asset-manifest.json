@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio-v2/static/css/main.998fcbae.css",
-    "main.js": "/portfolio-v2/static/js/main.9d184ade.js",
+    "main.js": "/portfolio-v2/static/js/main.6a9dee99.js",
     "static/js/787.d9a20797.chunk.js": "/portfolio-v2/static/js/787.d9a20797.chunk.js",
     "static/media/layered-waves-haikei.svg": "/portfolio-v2/static/media/layered-waves-haikei.00d87f9524af3e0a7b2efa3a5642277c.svg",
     "static/media/wave-haikei.svg": "/portfolio-v2/static/media/wave-haikei.bd6845870e6ce05c829f7d36cf077b10.svg",
     "index.html": "/portfolio-v2/index.html",
+    "static/media/circle-scatter-haikei.svg": "/portfolio-v2/static/media/circle-scatter-haikei.0e45153ed547c13f73a639021df5e634.svg",
     "main.998fcbae.css.map": "/portfolio-v2/static/css/main.998fcbae.css.map",
-    "main.9d184ade.js.map": "/portfolio-v2/static/js/main.9d184ade.js.map",
+    "main.6a9dee99.js.map": "/portfolio-v2/static/js/main.6a9dee99.js.map",
     "787.d9a20797.chunk.js.map": "/portfolio-v2/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.998fcbae.css",
-    "static/js/main.9d184ade.js"
+    "static/js/main.6a9dee99.js"
   ]
 }
