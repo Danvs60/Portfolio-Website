@@ -3,8 +3,9 @@ import Sample from '../images/Sample'
 import { FaJsSquare, FaPython, FaJava } from 'react-icons/fa'
 import { SiHaskell } from 'react-icons/si'
 
-export default function Card({ sm, title, desc, url }) {
-  const [languages, setLanguages] = useState(["Java"])
+export default function Card({ sm, title, desc, url, isLoaded = false }) {
+  const [languages, setLanguages] = useState([])
+  console.log(url)
 
   const getLanguages = () => {
     fetch(`https://api.github.com/users/Danvs60/${title}/languages`)
@@ -28,9 +29,10 @@ export default function Card({ sm, title, desc, url }) {
     }
   }
 
-  // useEffect(() => {
-  //   getLanguages()
-  // }, [])
+  useEffect(() => {
+    if (isLoaded)
+      getLanguages()
+  }, [isLoaded])
 
   return (
     <div className={`w-full h-full flex lg:flex-col justify-between gap-y-8 gap-x-12 motion-safe:animate-fadeIn px-6 py-4 md:px-10 md:py-6 rounded-xl shadow-xl text-gray-800 bg-mistyRose-500 

@@ -7,6 +7,7 @@ import Circle from '../images/Circle'
 import Ellipse1_2 from '../images/Ellipse1_2'
 import Ellipse1_4 from '../images/Ellipse1_4'
 import Ellipse3_4 from '../images/Ellipse3_4'
+import circles from '../images/circle-scatter-haikei.svg'
 
 const code1 = "(softwareEngineer, data) => { "
 const code2 = 'return “Machine Learning!”'
@@ -18,7 +19,7 @@ export default function Home({ scrollToProjects, scrollToAbout }) {
   const [menuOpen, setMenuOpen] = React.useState(window.innerWidth >= 768)
 
   return (
-    <div className='bg-mistyRose-500 text-gray-800 min-h-screen px-12 md:px-24 2xl:px-40 py-8 md:py-16'>
+    <div className='bg-mistyRose-500 text-gray-800 min-h-screen px-12 md:px-24 2xl:px-40 py-8 md:py-16 spacer' style={{ backgroundImage: `url(${circles})` }}>
       <button onClick={() => setMenuOpen(!menuOpen)} className='block md:hidden'><HiMenu size={30} /></button>
       <nav className={`${menuOpen ? "block" : "hidden"} flex flex-col md:flex-row md:justify-between w-full py-2 px-2`}>
         <a className='flex items-center gap-x-2 mb-2 text-2xl' href="https://github.com/Danvs60"><FaGithub className='text-gray-800' /> Danvs60</a>

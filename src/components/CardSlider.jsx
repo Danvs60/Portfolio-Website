@@ -15,11 +15,15 @@ export default function CardSlider() {
     ]
 
     const [repos, setRepos] = useState(test)
+    const [isLoaded, setIsLoaded] = useState(false)
 
     const getRepos = () => {
         fetch("https://api.github.com/users/Danvs60/repos")
             .then(res => res.json())
-            .then(data => setRepos(data))
+            .then(data => {
+                setRepos(data)
+                setIsLoaded(true)
+            })
     }
 
     useEffect(() => {
@@ -45,7 +49,7 @@ export default function CardSlider() {
                 {window.innerWidth >= 1280 ? <IoIosArrowDroprightCircle size={70} /> : <IoIosArrowDropdownCircle size={70} />}
             </button>
             {repos.slice(0, 3).map((proj, i) => (
-                <Card key={i + new Date().getTime()} sm={i % 2 === 0} title={proj.name} desc={proj.description} url={proj.html_url} />
+                <Card isLoaded={isLoaded} key={i + new Date().getTime()} sm={i % 2 === 0} title={proj.name} desc={proj.description} url={proj.html_url} />
             ))}
         </>
     )
